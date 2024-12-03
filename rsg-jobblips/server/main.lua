@@ -78,12 +78,12 @@ end)
 RegisterCommand('toggleblips', function(source, args, rawCommand)
     local Player = RSGCore.Functions.GetPlayer(source)
     
-    -- Check if player has admin permissions
+    
     if RSGCore.Functions.HasPermission(source, 'admin') then
         Config.BlipsEnabled = not Config.BlipsEnabled
         TriggerClientEvent('RSGCore:Notify', source, 'Job Blips ' .. (Config.BlipsEnabled and 'Enabled' or 'Disabled'))
         
-        -- Immediately update blips for all players
+        
         UpdateAllPlayerBlips()
         SendBlipDataToAllClients()
     else
