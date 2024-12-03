@@ -36,12 +36,12 @@ Config.Jobs = {
     },
 	['horsetrainer'] = {
         tracked = true,
-        blipColor = `BLIP_MODIFIER_MP_COLOR_6`, -- red
+        blipColor = `BLIP_MODIFIER_MP_COLOR_6`, -- yellow
         blipSprite = GetHashKey("blip_stable")
     },
 	['unemployed'] = {
         tracked = true,
-        blipColor = `BLIP_MODIFIER_MP_COLOR_32`, -- red
+        blipColor = `BLIP_MODIFIER_MP_COLOR_32`, -- white
         blipSprite = GetHashKey("blip_weapon_melee")
     }
 }
